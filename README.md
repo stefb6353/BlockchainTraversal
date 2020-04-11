@@ -8,6 +8,16 @@ export GOPATH={Absoulte Path of clone}/go
 Then you will be able to run the project with
 go run main.go
 
-Currently the project will just traverse the blockchain and print out each block
+Usage of HTTP Web Server
 
-The goal this semester is to provide a web server to allow blockchain queries
+Runs unsecure on port 8080
+
+GET /blockchain
+- Returns entire blockchain
+POST /blockchain/dump/block
+- Post as a form:
+-- block "number"
+POST /blockchain/search
+- Post as a form:
+-- key "string"
+-- value "string"
